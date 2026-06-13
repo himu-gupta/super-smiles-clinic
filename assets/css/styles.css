@@ -78,8 +78,9 @@ svg { display: block; }
 .portrait-frame { position: absolute; inset: 0 20px 0 0; overflow: hidden; border-radius: 48% 48% 24px 24px; background: #e9e3d6; box-shadow: var(--shadow); }
 .portrait-frame::after { content: ""; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5); border-radius: inherit; pointer-events: none; }
 .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.doctor-card { position: absolute; left: -38px; bottom: 54px; display: flex; align-items: center; gap: 12px; min-width: 260px; padding: 16px 19px; color: var(--white); background: var(--ink); border-radius: 14px; box-shadow: 0 20px 45px rgba(13, 40, 36, .25); }
-.doctor-card-icon { display: grid; place-items: center; width: 38px; height: 38px; color: var(--ink); background: var(--gold); border-radius: 50%; font-size: 24px; }
+.doctor-card { position: absolute; left: calc(50% - 10px); bottom: 38px; display: flex; align-items: center; gap: 12px; min-width: 260px; padding: 16px 19px; color: var(--white); background: var(--ink); border-radius: 14px; box-shadow: 0 20px 45px rgba(13, 40, 36, .25); transform: translateX(-50%); }
+.doctor-card-icon { display: grid; place-items: center; width: 34px; height: 34px; flex: 0 0 auto; color: var(--ink); background: var(--gold); border-radius: 50%; }
+.doctor-card-icon svg { width: 17px; height: 17px; fill: currentColor; }
 .doctor-card strong, .doctor-card small { display: block; }
 .doctor-card strong { font-family: var(--font-display); font-size: 17px; }
 .doctor-card small { margin-top: 2px; color: #c9d8d4; font-size: 11px; }
@@ -212,7 +213,6 @@ svg { display: block; }
   .site-nav > a:not(.button) { display: none; }
   .hero-grid { gap: 38px; }
   .hero-visual { min-height: 500px; }
-  .doctor-card { left: -15px; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
   .doctor-grid { gap: 50px; }
   .doctor-image-card { height: 520px; }
@@ -248,7 +248,7 @@ svg { display: block; }
   .trust-row span { font-size: 9px; }
   .hero-visual { min-height: 510px; }
   .portrait-frame { right: 0; border-radius: 42% 42% 22px 22px; }
-  .doctor-card { left: 10px; bottom: 24px; min-width: 245px; }
+  .doctor-card { left: 50%; bottom: 24px; min-width: 245px; }
   .open-card { top: 42px; right: -5px; }
   .quick-info-grid { grid-template-columns: 1fr; }
   .quick-info-grid > * { min-height: 90px; padding: 20px 8px; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .12); }
@@ -287,7 +287,7 @@ svg { display: block; }
   .trust-row { justify-content: space-between; }
   .trust-row > div { padding: 0 7px; }
   .hero-visual { min-height: 445px; }
-  .doctor-card { left: 4px; min-width: 225px; padding: 13px; }
+  .doctor-card { min-width: 225px; padding: 13px; }
   .doctor-card strong { font-size: 15px; }
   .open-card { font-size: 9px; }
   .doctor-image-card { height: 440px; }
