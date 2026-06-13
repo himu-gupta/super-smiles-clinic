@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://himu-gupta.github.io/super-smiles-clinic/sitemap.xml
