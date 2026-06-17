@@ -97,6 +97,9 @@ svg { display: block; }
 .quick-info small { margin-bottom: 3px; color: #b7cbc6; font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .quick-info strong { font-size: 13px; line-height: 1.45; }
 .quick-info .arrow { margin-left: auto; color: var(--gold); }
+.quick-phone-list { display: flex; flex-direction: column; gap: 2px; }
+.quick-phone-list a { color: var(--white); font-size: 13px; font-weight: 800; line-height: 1.35; }
+.quick-phone-list a:hover { color: var(--gold); }
 
 .section-heading { max-width: 650px; }
 .section-heading.centered { margin: 0 auto 52px; text-align: center; }
@@ -182,7 +185,7 @@ svg { display: block; }
 .visit-card { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; color: var(--white); background: var(--green); border-radius: 32px; box-shadow: var(--shadow); }
 .visit-details { padding: 65px 60px; background: var(--ink); }
 .visit-details p { color: #bed0cb; }
-.visit-actions { display: flex; gap: 10px; margin-top: 30px; }
+.visit-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
 .visit-info { display: grid; grid-template-columns: 1fr 1fr; padding: 65px 50px; }
 .visit-info-block { padding: 0 28px; border-right: 1px solid rgba(255, 255, 255, .16); }
 .visit-info-block:last-child { border-right: 0; }
